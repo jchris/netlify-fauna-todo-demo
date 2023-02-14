@@ -130,7 +130,7 @@ function List(props) {
   );
 }
 function AllLists() {
-  const { lists, isLoading, addList, load, getServerLists } = useContext(
+  const { lists, isLoading, addList, load } = useContext(
     FaunaCtx
   );
   const onSubmit = title => load(addList(title));
